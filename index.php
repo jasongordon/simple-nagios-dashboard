@@ -27,15 +27,18 @@ require_once("./functions.php");
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1><?php print($title . " - " . $organization); ?></h1>
+                <h1><?php print($title . " - " . $organization ); ?></h1>
+	   	<h2>As of <?php print( date("Y-m-d g:i:s a",$lastupdated) . " // "); 
+        	        print($hosts_total . " Hosts" . " // ");
+	                print($service_total . " Services<br />");
+		 ?></h2>
+
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-12">
                 <?php
-                print($hosts_total . " Hosts");
-                print("<br />" . $service_total . " Services<br />");
                 if($criticals_count > 0 || $host_issue_count > 0) {
                     print('<div class="alert alert-danger"><h2>');
 #print('<script type="text/javascript">document.body.style.backgroundColor = "#ff0039";</script>');

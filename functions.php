@@ -32,6 +32,8 @@ foreach ($services as $key => $value) {
     $host["$key"] = $value;
 }
 
+$lastupdated = $data["programStatus"]["last_command_check"];
+
 function host_total($hosts) {
     $hosts_total = count($hosts);
     return $hosts_total;

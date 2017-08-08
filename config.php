@@ -15,12 +15,12 @@ ini_set('display_errors',1);
 ini_set('display_startup_errors',1);
 error_reporting(-1);
 
-$title = "Service Status Dashboard";
-$organization = "My Company";
+$title = "Nagios Status Dashboard";
+$organization = "Mayer Malbin Co. Inc";
 $support_url = "https://support.mycompany.org";
-$json_url = "https://monitoring.mycompany.org/nagios.json";
-$nagios_url = "https://monitoring.mycompany.org/nagios3/";
-$extinfo_url = "https://monitoring.mycompany.org/cgi-bin/nagios3/extinfo.cgi";
+$json_url = "http://192.168.1.252/nagios.json";
+$nagios_url = "http://192.168.1.252/nagios3/";
+$extinfo_url = "http://192.168.1.252/cgi-bin/nagios3/extinfo.cgi";
 
 # for a list of available themes: http://www.bootstrapcdn.com/bootswatch/
 $dashboard_theme = "united";

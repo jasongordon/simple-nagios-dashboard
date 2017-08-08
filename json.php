@@ -23,7 +23,7 @@
 // +----------------------------------------------------------------------+
 
 // Change this accordingly
-$statusFile = "/opt/local/var/nagios/status.dat";
+$statusFile = "/var/cache/nagios3/status.dat";
 
 //$nag_version = getFileVersion($statusFile); // returns integer 2 or 3
 $nag_version = 3;
